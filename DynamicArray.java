@@ -65,6 +65,13 @@ public void clear(){
     System.out.println("Array cleared.");
 }
 
+// Get
+public Person(int index){
+    if(index >= 0 && index < getSize()){
+        return array[index];
+    }
+}
+
 // Size
 public int getSize(){
     return size;
